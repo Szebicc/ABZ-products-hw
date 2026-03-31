@@ -1,0 +1,362 @@
+{
+  "company": {
+    "name": "ABZ Innovation",
+    "tagline": "We Build Drones.",
+    "description": "ABZ Innovation develops and manufactures heavy duty action drones designed to optimize workflows in different sectors. Products are built with European R&D and manufacturing standards.",
+    "certifications": ["CE", "ISO"],
+    "headquarters": "Hungary, EU",
+    "website": "https://abzinnovation.com",
+    "brand_colors": {
+      "primary": "#FF6B1A",
+      "dark": "#2D2D2D",
+      "text": "#FFFFFF"
+    }
+  },
+
+  "product_series": [
+    {
+      "id": "L",
+      "name": "L-Series",
+      "category": "Spraying Drones",
+      "tagline": "Efficiency and Precision Made Accessible",
+      "description": "Agricultural drones featuring CDA spraying systems and optimized downward airflow for highly efficient and precise spraying. Reduces water use up to 90%, chemicals by up to 50%, and operating costs up to 75%.",
+      "primary_use_cases": ["crop_spraying", "orchard_spraying", "vineyard_spraying", "greenhouse_shading", "differential_spraying", "spot_spraying"],
+      "target_customers": ["farmers", "service_providers", "large_farms"]
+    },
+    {
+      "id": "S",
+      "name": "S-Series",
+      "category": "Granule & Seed Spreading Drones",
+      "tagline": "Spreading Granules or Seeds Made Simple",
+      "description": "Drones designed for efficient seed and fertilizer distribution across various agricultural applications.",
+      "primary_use_cases": ["seeding", "fertilization", "bait_spreading", "deicing", "fish_farm_feeding"],
+      "target_customers": ["farmers", "service_providers", "fish_farms"]
+    },
+    {
+      "id": "M",
+      "name": "M-Series",
+      "category": "Multifunctional Drones",
+      "tagline": "Limitless Opportunities",
+      "description": "Robust, customizable drone platforms ideal for R&D, universities, and custom developments. Equipped with power and communication ports for integrating sensors, cameras, or delivery systems.",
+      "primary_use_cases": ["research", "custom_development", "sensor_carrying", "package_delivery", "training", "mapping"],
+      "target_customers": ["universities", "research_institutions", "developers"]
+    },
+    {
+      "id": "C",
+      "name": "C-Series",
+      "category": "Building Cleaning Drones",
+      "tagline": "Cleaning",
+      "description": "Cutting-edge drones for cleaning hard-to-reach areas in industrial buildings, factories, and office complexes. Eliminates the need for cranes or scaffolding.",
+      "primary_use_cases": ["industrial_cleaning", "facade_cleaning", "factory_cleaning"],
+      "target_customers": ["cleaning_companies", "facility_managers", "industrial_operators"]
+    }
+  ],
+
+  "drones": [
+    {
+      "id": "L50",
+      "series": "L",
+      "name": "L50",
+      "subtitle": "Europe's Most Efficient High-Performance Field Spraying Drone",
+      "ideal_for": "Large farms over 300 ha and service providers",
+      "specs": {
+        "tank_capacity_liters": 50,
+        "coverage_per_hour_hectares": 24,
+        "coverage_per_takeoff_hectares": 3,
+        "working_width_meters": { "min": 8, "max": 12 },
+        "obstacle_detection": "3D LiDAR (ABZ Sense)",
+        "positioning": "Dual RTK",
+        "camera": "FHD, vertically adjustable 0-180°",
+        "low_drift_settings": true,
+        "flight_planning": "Advanced, including line SHP import",
+        "certifications": ["CE", "FCC"]
+      },
+      "compatible_accessories": ["70L_spreader", "FTS", "smart_battery_L50", "smart_charger_L50", "emlid_RS3", "night_kit", "liquid_tank_50L"]
+    },
+    {
+      "id": "L30V2",
+      "series": "L",
+      "name": "L30 V2",
+      "subtitle": "The Perfect Balance Between Speed, Cost, and Logistics",
+      "ideal_for": "Medium to larger farms, orchards, vineyards, cereals, greenhouse shading",
+      "specs": {
+        "tank_capacity_liters": 30,
+        "coverage_per_hour_hectares": 21,
+        "coverage_per_takeoff_hectares": 2.4,
+        "working_width_meters": { "min": 5, "max": 10 },
+        "obstacle_detection": "ABZ Sense (LiDAR-based obstacle avoidance and terrain follow)",
+        "max_liquid_flow_liters_per_min": 16,
+        "operating_cost_eur_per_hectare": 1.2,
+        "transport": "Fits in a standard pick-up truck",
+        "low_drift_settings": true,
+        "flight_planning": "Advanced, including line SHP import",
+        "certifications": ["CE", "FCC"]
+      },
+      "compatible_accessories": ["50L_spreader", "FTS", "smart_battery_L30", "smart_charger_kit", "emlid_RS3", "night_kit"],
+      "special_capabilities": ["greenhouse_shading"]
+    },
+    {
+      "id": "L10V2",
+      "series": "L",
+      "name": "L10 V2",
+      "subtitle": "Industry-Leading Low Operating Costs",
+      "ideal_for": "Farmers with up to ~150 hectares, training, service providers with smaller farms",
+      "specs": {
+        "tank_capacity_liters": 10,
+        "coverage_per_hour_hectares": 10,
+        "working_width_meters": { "min": 1.5, "max": 6 },
+        "obstacle_detection": "Multi-beam LiDAR",
+        "terrain_follow": "Smart terrain follow in vineyards and orchards",
+        "tank_swap": "Quick swap tank",
+        "transport": "Convenient transport, single pilot operation",
+        "low_drift_settings": true,
+        "flight_planning": "Advanced, including line SHP import",
+        "certifications": ["CE"]
+      },
+      "compatible_accessories": ["granule_spreader_L10", "trichogramma_spreader", "FTS", "smart_battery_L10", "smart_charger_L10", "emlid_RS3", "liquid_tank_10L"]
+    },
+    {
+      "id": "S50",
+      "series": "S",
+      "name": "S50",
+      "subtitle": "High-Precision Seeding and Fertilization",
+      "ideal_for": "Large-scale operations, targeted fertilization, seeding, fish farm feeding",
+      "specs": {
+        "hopper_capacity_liters": 50,
+        "distribution_rate_kg_per_hour": 1100,
+        "spreading_width_meters": { "min": 4, "max": 9 },
+        "granule_size_mm": { "min": 0.5, "max": 6 },
+        "obstacle_detection": "ABZ Sense (LiDAR-based obstacle avoidance and terrain follow)",
+        "flight_paths": "Automated",
+        "flow_control": "Adaptive",
+        "certifications": ["CE"]
+      },
+      "compatible_accessories": ["FTS", "smart_battery_S50", "smart_charger_kit", "emlid_RS3"],
+      "material_types": ["seeds", "fertilizers", "bait"]
+    },
+    {
+      "id": "S20",
+      "series": "S",
+      "name": "S20",
+      "subtitle": "Precision Spreading for Small to Medium Operations",
+      "ideal_for": "Small to medium-scale agricultural tasks",
+      "specs": {
+        "hopper_capacity_liters": 20,
+        "distribution_rate_kg_per_hour": 440,
+        "spreading_width_meters": { "min": 3, "max": 7 },
+        "granule_size_mm": { "min": 0.5, "max": 6 },
+        "flight_paths": "Automated",
+        "flow_control": "Adaptive",
+        "certifications": ["CE"]
+      },
+      "compatible_accessories": ["FTS", "smart_battery_S20", "smart_charger_3000", "emlid_RS3"],
+      "material_types": ["seeds", "fertilizers", "bait"]
+    },
+    {
+      "id": "M40",
+      "series": "M",
+      "name": "M40",
+      "subtitle": "Heavy-Lift Multifunctional Platform",
+      "ideal_for": "R&D companies and universities for custom drone developments, training, and experimentation",
+      "specs": {
+        "payload_capacity_kg": 40,
+        "flight_time_minutes": { "min": 15, "max": 40, "note": "Depending on payload weight" },
+        "communication_ports": ["I2C", "UART", "CAN", "USB"],
+        "power_outputs": ["12V DC", "24V DC", "5V DC", "Battery voltage"],
+        "frame": "Foldable",
+        "mounting": "Multiple positions for different payloads",
+        "software": "Open-source",
+        "certifications": ["CE"]
+      },
+      "compatible_accessories": ["50L_spreader", "FTS", "smart_battery_M40", "smart_charger_kit", "emlid_RS3"]
+    },
+    {
+      "id": "M12",
+      "series": "M",
+      "name": "M12",
+      "subtitle": "Compact and Versatile Multifunctional Platform",
+      "ideal_for": "R&D, universities, custom development, training. C4 labeled for EU drone regulations.",
+      "specs": {
+        "payload_capacity_kg": 12,
+        "flight_time_minutes": { "min": 15, "max": 50, "note": "Depending on payload weight" },
+        "communication_ports": ["I2C", "UART", "CAN", "USB"],
+        "power_outputs": ["12V DC", "24V DC", "5V DC", "Battery voltage"],
+        "frame": "Foldable",
+        "mounting": "Multiple positions for different payloads",
+        "software": "Open-source",
+        "certifications": ["CE", "C4"],
+        "maintenance": "Cost-effective repair and maintenance"
+      },
+      "compatible_accessories": ["FTS", "smart_battery_M12", "smart_charger_3000", "emlid_RS3"]
+    },
+    {
+      "id": "C10",
+      "series": "C",
+      "name": "C10",
+      "subtitle": "Industrial High-Pressure Cleaning Drone",
+      "ideal_for": "Industrial buildings, factories, office complexes, hard-to-reach areas",
+      "specs": {
+        "max_height_meters": 60,
+        "flow_rate_liters_per_hour": 900,
+        "pressure_bar": 200,
+        "distance_control": "Radar-based automatic cleaning distance control",
+        "certifications": ["CE"]
+      },
+      "compatible_accessories": ["smart_charger_3000", "prop_guard", "karcher_system", "smart_battery_C10", "emlid_RS3", "hose_30m", "hose_60m"]
+    }
+  ],
+
+  "accessories": [
+    {
+      "id": "70L_spreader",
+      "name": "70 L Spreader System",
+      "description": "High-capacity intelligent spreading system for seed and fertilizer distribution. Features precision dosing mechanism and integrated sensors.",
+      "compatible_with": ["L50"]
+    },
+    {
+      "id": "50L_spreader",
+      "name": "50 L Spreader System",
+      "description": "Compatible with seeds and granules 0.5-6 mm. Ideal for seeding, deicing agents, or fertilizing.",
+      "compatible_with": ["L30V2", "M40"]
+    },
+    {
+      "id": "granule_spreader_L10",
+      "name": "Granule Spreader (L10)",
+      "description": "Add granule spreading capability to the L10 V2.",
+      "compatible_with": ["L10V2"]
+    },
+    {
+      "id": "trichogramma_spreader",
+      "name": "Trichogramma Spreading System",
+      "description": "Chemical-free biological pest control using Trichogramma brassicae to combat European Corn Borer. 8-liter tank, treats up to 36 hectares/hour, holds 800-1200 pellets.",
+      "compatible_with": ["L10V2", "M12"]
+    },
+    {
+      "id": "FTS",
+      "name": "Flight Termination System",
+      "description": "Enhances operational safety. Pilot can shut down motors independently of the drone's flight controller.",
+      "compatible_with": ["L50", "L30V2", "L10V2", "S50", "S20", "M40", "M12"]
+    },
+    {
+      "id": "emlid_RS3",
+      "name": "Emlid RS3 RTK Base Station",
+      "description": "Multi-band, multi-constellation GNSS with up to 60° tilt compensation and ultra-fast RTK initialization. IP67 and MIL-STD-810H rated, 18-hour battery.",
+      "compatible_with": ["L50", "L30V2", "L10V2", "S50", "S20", "M40", "M12", "C10"]
+    },
+    {
+      "id": "night_kit",
+      "name": "Night Kit",
+      "description": "Enables night/early morning operations when temperatures are lower and humidity higher, improving absorption and reducing drift.",
+      "compatible_with": ["L50", "L30V2"]
+    },
+    {
+      "id": "prop_guard",
+      "name": "ABZ Prop Guard",
+      "description": "Carbon fiber, aluminum alloy, and ABS plastic propeller guard. 910g per pair, quick-release design. Recommended for close-range operations.",
+      "compatible_with": ["C10"]
+    },
+    {
+      "id": "karcher_system",
+      "name": "Kärcher High Pressure Cleaning System",
+      "description": "Ground-based high pressure cleaning unit that connects to the C10 drone via hose.",
+      "compatible_with": ["C10"]
+    },
+    {
+      "id": "hose_30m",
+      "name": "Hose 30 m",
+      "description": "6 mm ID / 12 mm OD, rated for up to 200 bar, burst > 800 bar. Chemical and weather resistant.",
+      "compatible_with": ["C10"]
+    },
+    {
+      "id": "hose_60m",
+      "name": "Hose 60 m",
+      "description": "6 mm ID / 12 mm OD, rated for up to 200 bar, burst > 800 bar. Chemical and weather resistant. For higher reach operations.",
+      "compatible_with": ["C10"]
+    }
+  ],
+
+  "use_cases": [
+    {
+      "id": "crop_spraying",
+      "name": "Crop Spraying (Arable Fields)",
+      "description": "Spraying herbicides, fungicides, or insecticides on open-field crops like wheat, corn, sunflower, and soy.",
+      "recommended_drones": ["L50", "L30V2", "L10V2"],
+      "considerations": "Choose based on farm size: L10 V2 for up to ~150 ha, L30 V2 for medium-large, L50 for 300+ ha."
+    },
+    {
+      "id": "orchard_spraying",
+      "name": "Orchard Spraying",
+      "description": "Spraying fruit trees with terrain-following capability for uneven terrain.",
+      "recommended_drones": ["L30V2", "L10V2"],
+      "considerations": "Terrain follow is essential. L10 V2 offers narrow 1.5 m working width for tight rows."
+    },
+    {
+      "id": "vineyard_spraying",
+      "name": "Vineyard Spraying",
+      "description": "Precision spraying for vineyards with narrow row spacing.",
+      "recommended_drones": ["L10V2", "L30V2"],
+      "considerations": "L10 V2's 1.5 m minimum working width is ideal for narrow vineyard rows."
+    },
+    {
+      "id": "greenhouse_shading",
+      "name": "Greenhouse Shading",
+      "description": "Applying shading paint to greenhouse roofs. Covers 2 ha/hour, 70% faster than manual methods.",
+      "recommended_drones": ["L30V2"],
+      "considerations": "Operates at 2.5-4 m above greenhouse. Uses 333 L water/ha and 100 L paint/ha."
+    },
+    {
+      "id": "seeding",
+      "name": "Seeding",
+      "description": "Distributing seeds across fields for planting.",
+      "recommended_drones": ["S50", "S20"],
+      "considerations": "S50 for large-scale (1100 kg/h), S20 for smaller operations (440 kg/h). L-series with optional spreader also available."
+    },
+    {
+      "id": "fertilization",
+      "name": "Fertilization (Granular)",
+      "description": "Spreading granular fertilizer across crops.",
+      "recommended_drones": ["S50", "S20"],
+      "considerations": "Can also be done with L30 V2 + 50L spreader or L50 + 70L spreader for combined spray+spread operations."
+    },
+    {
+      "id": "biological_pest_control",
+      "name": "Biological Pest Control (Trichogramma)",
+      "description": "Deploying Trichogramma brassicae parasitic wasps against European Corn Borer. Chemical-free.",
+      "recommended_drones": ["L10V2"],
+      "considerations": "Requires Trichogramma Spreading System accessory. Treats up to 36 ha/hour."
+    },
+    {
+      "id": "industrial_cleaning",
+      "name": "Industrial & Building Cleaning",
+      "description": "High-pressure cleaning of facades, factory interiors, and hard-to-reach surfaces.",
+      "recommended_drones": ["C10"],
+      "considerations": "Up to 60 m height. Eliminates cranes and scaffolding. Radar-based distance control."
+    },
+    {
+      "id": "research_development",
+      "name": "Research & Development",
+      "description": "Custom drone development, sensor integration, payload testing, academic research.",
+      "recommended_drones": ["M12", "M40"],
+      "considerations": "M12 for up to 12 kg payload (C4 labeled), M40 for up to 40 kg. Both have open-source software and full communication ports."
+    },
+    {
+      "id": "package_delivery",
+      "name": "Package Delivery",
+      "description": "Transporting packages or supplies via drone.",
+      "recommended_drones": ["M40", "M12"],
+      "considerations": "M40 handles heavy payloads up to 40 kg. M12 for lighter deliveries up to 12 kg."
+    }
+  ],
+
+  "technology": {
+    "cda_spraying": {
+      "name": "CDA (Controlled Droplet Application)",
+      "description": "Unlike hydraulic spraying which creates uneven droplet sizes (causing ~50% waste), CDA ensures precise droplet sizes tailored to specific crop needs. Combined with drone propeller downwash for even distribution.",
+      "benefits": ["Up to 90% less water use", "Up to 50% less chemicals", "Maintenance-free spraying system", "No crop trampling", "Can spray after rain when tractors cannot access fields"]
+    },
+    "abz_sense": {
+      "name": "ABZ Sense (LiDAR System)",
+      "features": ["Real-time 3D mapping", "Point cloud analysis", "Obstacle detection (electric wires, moving objects)", "80 m detection range", "Terrain following (orchards, vineyards)", "No pre-mapping required"]
+    }
+  }
+}
