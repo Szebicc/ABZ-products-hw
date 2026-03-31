@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -6,8 +5,15 @@ import { KeySpecs } from "./KeySpecs"
 import type { Drone } from "@/types"
 import { getDroneWithDetails } from "@/lib/data"
 
-export function DroneCard({ drone }: { drone: Drone }) {
-  const [expanded, setExpanded] = useState(false)
+export function DroneCard({ 
+  drone,
+  expanded,
+  onToggle,
+ }: { 
+  drone: Drone
+  expanded: boolean
+  onToggle: () => void 
+}) {
 
   const detailed = getDroneWithDetails(drone)
 
@@ -31,7 +37,7 @@ export function DroneCard({ drone }: { drone: Drone }) {
       <Button
       variant= "outline"
       size="sm"
-      onClick={() => setExpanded(prev => !prev)}
+      onClick={onToggle}
       >
         {expanded ? "Hide Details" : "View Details"}
       </Button>
