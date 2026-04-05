@@ -4,6 +4,7 @@ export function formatValue(key: string, value: any): string {
 
   switch (key) {
     case "coverage_per_hour_hectares":
+    case "coverage_per_takeoff_hectares":
       return `${value} ha/hour`
 
     case "tank_capacity_liters":
@@ -32,6 +33,9 @@ export function formatValue(key: string, value: any): string {
     case "flight_time_minutes":
       return `${value.min}–${value.max} min`
 
+    case "granule_size_mm":
+      return `${value.min}–${value.max} Mm`
+
     default:
       if (Array.isArray(value)) return value.join(", ")
       if (typeof value === "object") return JSON.stringify(value)
@@ -41,9 +45,12 @@ export function formatValue(key: string, value: any): string {
 }
 
 export function formatKey(key: string) {
-  return key
+  const cleaned = key
+    .replace(/_(kg|liters|meters|hectares|bar|minutes|per_hour|capacity|width|height|rate|flow|pressure|time|Mm)$/, "")
     .replaceAll("_", " ")
     .replace(/\b\w/g, l => l.toUpperCase())
+
+  return cleaned
 }
 
 export function getImportantKeys(series: string): string[] {

@@ -29,7 +29,8 @@ export default function Home() {
     <div>
       <CompanyHero />
       <div id="drone-listings" className="mx-auto max-w-6xl space-y-10 p-6">
-        <div>
+        <div className="flex flex-col items-center text-center gap-6">
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-orange-500">Find Your Perfect Drone</h1>
           <MultipleSelection
             items={seriesCategories}
             onChange={(value: string[]) => {
