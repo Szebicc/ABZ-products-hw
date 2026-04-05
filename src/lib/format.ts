@@ -36,6 +36,9 @@ export function formatValue(key: string, value: any): string {
     case "granule_size_mm":
       return `${value.min}–${value.max} Mm`
 
+    case "low_drift_settings":
+      return value ? "Available" : "Not Available"
+
     default:
       if (Array.isArray(value)) return value.join(", ")
       if (typeof value === "object") return JSON.stringify(value)
