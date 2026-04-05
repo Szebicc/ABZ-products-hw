@@ -1,26 +1,38 @@
 # ABZ Drone Lister
 
-A modern, responsive web application for browsing and exploring ABZ Innovation's heavy-duty drone lineup. Built as part of an interview homework assignment to demonstrate full-stack development skills with React and TypeScript.
+A modern, responsive web application for browsing and exploring ABZ Innovation's heavy-duty drone lineup. Built as part of an interview assignment with a focus on clean UI, scalability, and user experience.
+
+![App Screenshot](/abz-drone-lister/public/abz-md-picture.png)
 
 ## 🚀 Features
 
-- **Interactive Drone Catalog**: Browse drones by series (Spraying, Spreading, Multifunctional, Cleaning) with detailed specifications.
-- **Dynamic Filtering**: Filter drones by series using a multi-selection component for easy discovery.
-- **Detailed Drone Pages**: Click "Read more" on any drone card to view full specs, images, and key features.
-- **Smooth Navigation**: Scroll-to functionality and expandable drone cards for better UX.
+## 🚀 Features
+
+- **Interactive Drone Catalog**  
+  Browse drones by category with a clean, card-based layout and quick access to key specs.
+
+- **Dynamic Filtering**  
+  Instantly filter drones by series using a multi-select component.
+
+- **Detailed Product Pages**  
+  View full specifications, accessories, and use cases for each drone.
+
+- **Smooth UX**  
+  Expandable cards, scroll behavior, and responsive layout for seamless navigation.
 
 ## 🛠 Tech Stack
-- **Frontend**: React 18 with TypeScript for type safety and maintainability.
-- **Build Tool**: Vite for fast development and optimized production builds.
-- **Styling**: Tailwind CSS for utility-first styling, with shadcn/ui components for consistent UI elements.
-- **Data Management**: Static JSON data with custom formatting utilities.
-- **Routing**: React Router for client-side navigation.
+
+- **React + TypeScript** – Type-safe, scalable frontend architecture  
+- **Vite** – Fast development and optimized builds  
+- **Tailwind CSS** – Utility-first styling  
+- **shadcn/ui** – Accessible, reusable UI components  
+- **React Router** – Client-side navigation  
 
 ## 📦 Setup Instructions
 
 1. **Clone the Repository**:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Szebicc/ABZ-products-hw.git
    cd abz-drone-lister
    ```
 
