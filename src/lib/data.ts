@@ -1,16 +1,17 @@
 import rawData from "../data/drones.json"
-import type { Drone, ProductSeries, Accessory, UseCase } from "@/types"
+import type { Drone, ProductSeries, Accessory, UseCase, SeriesId } from "@/types"
 
 export const drones = rawData.drones as Drone[]
 export const series = rawData.product_series as ProductSeries[]
 export const accessories: Accessory[] = rawData.accessories
 export const useCases: UseCase[] = rawData.use_cases
+export const seriesSimple = series.map(s => ({ id: s.id, category: `${s.category} (${s.name})`}))
 
-export function getSeries(seriesId: string) {
+export function getSeries(seriesId: SeriesId): ProductSeries | undefined {
   return series.find(s => s.id === seriesId)
 }
 
-export function getDronesBySeries(seriesId: string) {
+export function getDronesBySeries(seriesId: SeriesId): Drone[] {
   return drones.filter(d => d.series === seriesId)
 }
 

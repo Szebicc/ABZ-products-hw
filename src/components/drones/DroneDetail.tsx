@@ -11,13 +11,11 @@ export function DroneDetail({ drone }: { drone: Drone }) {
         <p className="text-muted-foreground">{drone.subtitle}</p>
       </div>
 
-      {/* Ideal for */}
       <div>
         <h3 className="font-semibold">Best for</h3>
         <p>{drone.ideal_for}</p>
       </div>
 
-      {/* Key Specs */}
       <div>
         <h3 className="font-semibold">Key Specs</h3>
         <pre className="text-sm">
@@ -25,7 +23,6 @@ export function DroneDetail({ drone }: { drone: Drone }) {
         </pre>
       </div>
 
-      {/* Accessories */}
       <div>
         <h3 className="font-semibold">Accessories</h3>
         {detailed.accessories.map(a => (
@@ -33,7 +30,6 @@ export function DroneDetail({ drone }: { drone: Drone }) {
         ))}
       </div>
 
-      {/* Use cases */}
       <div>
         <h3 className="font-semibold">Use Cases</h3>
         {detailed.useCases.map(u => (
