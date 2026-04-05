@@ -6,6 +6,7 @@ export const series = rawData.product_series as ProductSeries[]
 export const accessories: Accessory[] = rawData.accessories
 export const useCases: UseCase[] = rawData.use_cases
 export const seriesSimple = series.map(s => ({ id: s.id, category: `${s.category} (${s.name})`}))
+export const company = rawData.company
 
 export function getSeries(seriesId: SeriesId): ProductSeries | undefined {
   return series.find(s => s.id === seriesId)
