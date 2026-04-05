@@ -2,7 +2,7 @@
 
 A modern, responsive web application for browsing and exploring ABZ Innovation's heavy-duty drone lineup. Built as part of an interview assignment with a focus on clean UI, scalability, and user experience.
 
-![App Screenshot](/abz-drone-lister/public/abz-md-picture.png)
+![App Screenshot](/public/abz-md-picture.png)
 
 ## 🚀 Features
 
