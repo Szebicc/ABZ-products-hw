@@ -6,8 +6,6 @@ A modern, responsive web application for browsing and exploring ABZ Innovation's
 
 ## 🚀 Features
 
-## 🚀 Features
-
 - **Interactive Drone Catalog**  
   Browse drones by category with a clean, card-based layout and quick access to key specs.
 
