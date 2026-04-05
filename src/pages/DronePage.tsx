@@ -3,6 +3,7 @@ import { drones, getDroneWithDetails } from "@/lib/data"
 import { formatKey, formatValue } from "@/lib/format"
 import { Header } from "@/components/layout/Header"
 import { Button } from "@/components/ui/button"
+import ErrorPage from "./ErrorPage"
 
 export default function DronePage() {
   const { id } = useParams()
@@ -10,7 +11,7 @@ export default function DronePage() {
   const navigate = useNavigate()
 
   if (!drone) {
-    return <div className="p-6">Drone not found</div>
+    return <ErrorPage />
   }
 
   const detailed = getDroneWithDetails(drone)
@@ -69,9 +70,7 @@ export default function DronePage() {
           </div>
         </div>
 
-        {/* 🧩 ACCESSORIES + USE CASES */}
         <div className="grid gap-6 md:grid-cols-2">
-          {/* Accessories */}
           <div className="rounded-xl border bg-card p-6">
             <h2 className="mb-4 text-lg font-semibold">
               Compatible Accessories
@@ -92,7 +91,6 @@ export default function DronePage() {
             </div>
           </div>
 
-          {/* Use Cases */}
           <div className="rounded-xl border bg-card p-6">
             <h2 className="mb-4 text-lg font-semibold">Use Cases</h2>
 

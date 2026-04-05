@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Link, useLocation } from "react-router"
+import { ModeToggle } from "../ui/mode-toggle"
 import logo from "@/assets/logo.png"
 
 export function Header() {
@@ -21,6 +22,7 @@ export function Header() {
               All Drones
             </Button>
           </Link>
+          <ModeToggle />
         </div>
       </div>
     </header>

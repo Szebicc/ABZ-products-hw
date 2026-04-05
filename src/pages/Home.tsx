@@ -26,7 +26,7 @@ export default function Home() {
   )
 
   return (
-    <div>
+    <div className="min-h-screen bg-gradient-to-b from-background to-muted">
       <CompanyHero />
       <div id="drone-listings" className="mx-auto max-w-6xl space-y-10 p-6">
         <div className="flex flex-col items-center text-center gap-6">

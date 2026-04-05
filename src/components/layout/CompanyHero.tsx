@@ -12,7 +12,7 @@ export default function CompanyHero() {
     <section className="relative bg-gradient-to-r from-gray-900 to-gray-800 px-6 py-20 text-white">
       <div className="absolute inset-0 overflow-hidden">
         <video
-          className="insert-0 absolute h-full w-full object-cover"
+          className="insert-0 absolute w-full object-cover"
           autoPlay
           loop
           muted

@@ -23,11 +23,15 @@ export function DroneCard({
   return (
     <Card className="transition hover:shadow-lg border-2 border-transparent hover:border-primary" id={drone.id}>
       <CardContent className="space-y-3 p-4">
+        <div className="h-40 w-full overflow-hidden items-center rounded-lg border">
+          <img
+            src={`/src/assets/${drone.id}.webp`}
+            alt={drone.name}
+            className="h-full w-full object-cover object-center"
+          />
+        </div>
      <div className="space-y-1">
         <h3 className="text-lg font-semibold">{drone.name}</h3>
-        <Link to={`/drones/${drone.id}`} className="text-primary hover:underline">
-          Read more
-        </Link>
         <p className="text-muted-foreground text-sm">
           {drone.subtitle}
         </p>  
@@ -45,6 +49,11 @@ export function DroneCard({
       >
         {expanded ? "Hide Details" : "View Details"}
       </Button>
+      <Link to={`/drones/${drone.id}`} className="text-primary hover:underline">
+          <Button variant= "link" size="sm">
+            Read More
+          </Button>
+        </Link>
         {expanded && (
           <div className="pt-4 space-y-4 border-t animate-in fade-in">
             <div>
